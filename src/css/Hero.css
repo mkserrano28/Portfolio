@@ -1,0 +1,173 @@
+.Hero {
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 90vh; 
+    color: #fff; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 50px;
+    justify-content: center; 
+    max-width: 100%; 
+}
+
+
+.title-name {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px; 
+
+}
+
+.contact-me {
+    padding: 5px 15px;
+    background-color: #FF6347; 
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 25px;
+}
+
+.contact-me:hover {
+    background-color: #FF4500; 
+}
+
+.Hero img {
+    width: 40%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-left: 20px; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    max-width: 100%; 
+    margin-left: 150px;
+}
+
+.title-name {
+    font-size: 5rem; 
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+    width: 80%;
+}
+
+.contact-me{
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: white; 
+    background-color: #6C5CE7; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    min-width: 200px; 
+    height: 50px; 
+}
+
+/* Hover Effect */
+.contact-me:hover {
+    background-color: #4C47A3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Focus Style */
+.contact-me:focus {
+    outline: 2px solid #4C47A3; /* Adds an outline for accessibility */
+}
+
+/* Optional: Additional Styling */
+.contact-me:active {
+    transform: scale(0.98); /* Adds a pressed effect */
+    background-color: #3B3782; /* Darkest shade */
+}
+
+
+.Hero img {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-right: 100px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 7s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+/* Responsive Design for Small Screens (below 768px) */
+@media (max-width: 768px) {
+    .Hero {
+        flex-direction: column-reverse; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+        height: auto; /* Let the hero section grow with content */
+    }
+
+    .text-container {
+        max-width: 40%; /* Take up more width on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .title-name {
+        font-size: 2.5rem; /* Adjust title size for smaller screens */
+        align-items: center;
+        justify-content: center;
+        margin-left: -150px;
+    }
+
+    .description {
+        font-size: 0.9rem; /* Adjust description size for smaller screens */
+        width: 150%; /* Adjust width */
+        margin-left: -125px;
+       
+    }
+
+    .Hero img {
+        margin-left: 90px;
+        width: 70%; 
+        height: 30%;
+      
+    }
+
+    .contact-me {
+        width: 50px; /* Make the button wider on small screens */
+        height: 50px;
+        margin-left: -150px;
+    }
+}
+

@@ -1,0 +1,24 @@
+[
+    {
+      "skillname": "HTML",
+      "percent": "80%"
+
+    },
+    {
+        "skillname": "CSS",
+        "percent": "80%"
+      },
+      {
+        "skillname": "PHP",
+        "percent": "60%"
+      },
+      {
+        "skillname": "React",
+        "percent": "60%"
+      },
+      {
+        "skillname": "Javascript",
+        "percent": "60%"
+      }
+      
+  ]

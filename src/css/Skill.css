@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+.body-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-container {
+    position: relative;
+    max-width: 700px;
+    margin-left: 40px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.skill-title {
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.img-skill {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 60%;
+    width: 25%;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: animate 7s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+
+}
+
+.skill-box {
+    width: 100%;
+    margin: 0 25px 0;
+}
+
+.skill-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    left: -50px;
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 6px;
+    width: 90%;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    animation: progress 0.6s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        height: 80vh;
+    }
+
+    .skill-box {
+        width: 100%;
+        /* Ensure skill boxes take up full width */
+    }
+
+    .img-skill {
+        width: 60%;
+        height: auto;
+    }
+
+    .skill-container {
+        width: 100%;
+        /* Make the skill container full-width */
+    }
+
+    .skill-title {
+        font-size: 2rem;
+        text-align: center;
+        /* Center align the skill title */
+        margin-bottom: 10px;
+        /* Add space below the title */
+    }
+}

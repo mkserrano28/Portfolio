@@ -1,0 +1,12 @@
+.anime{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transform: translateX(70vw);
+    animation: moveRotate 2s ease infinite alternate-reverse;
+}
+@keyframes moveRotate{
+    to{
+        transform: translateX(-80vw) rotate(360deg) scale(5);
+    }
+}

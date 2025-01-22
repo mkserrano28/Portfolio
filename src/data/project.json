@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Automated PM Report",
+      "image": "images/Shell.jpg",
+      "description": "Automation and remainder for managers to create their monthly Report.",
+      "skills": ["PowerApps", "PowerAutomate", "Sharepoint", "HTML", "CSS"]
+    },
+    {
+      "title": "L&D SharePoint Portal",
+      "image": "images/Sharepoint4.jpg",
+      "description": "Created a Portal for Learning and Development, See the available training for the employee",
+      "skills": ["React", "Express", "Node", "Sass"]
+    },
+    {
+      "title": "IDEA File Transfer",
+      "image": "images/Shell.jpg",
+      "description": "Search for client that have a loan or balance in their bank",
+      "skills": ["React", "Express", "Node"]
+    }
+  ]
+  
